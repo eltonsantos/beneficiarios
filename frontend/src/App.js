@@ -1,10 +1,8 @@
+import Routes from './routes';
+
 function App() {
   return (
-    <div>
-     <h1>Beneficiários</h1>
-
-     
-    </div>
+    <Routes />
   );
 }
 

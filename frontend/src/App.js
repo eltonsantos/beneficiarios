@@ -1,15 +1,11 @@
-import Routes from './routes/index';
+import Routes from './routes';
 
-import Menu from './components/Menu';
-
-// TEMPORARIO
-import Register from './pages/Register';
+// import Menu from './components/Menu';
 
 function App() {
   return (
     <div>
-      <Menu />
-      <Register />
+      <Routes />
     </div>
   );
 }

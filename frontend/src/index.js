@@ -1,16 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './styles/main.css';
+import "./styles/main.css";
 
-import App from './App';
-import { AdminProvider } from './hooks/admin';
+import App from "./App";
+// import { AdminProvider } from './hooks/admin';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AdminProvider>
-      <App />
-    </AdminProvider>
+    <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

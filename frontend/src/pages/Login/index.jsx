@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import { useAdmin } from '../../hooks/admin';
+import { useAuth } from '../../hooks/auth';
 
 const Login = () => {
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const { signIn } = useAdmin();
+  const { signIn } = useAuth();
 
   return (
     <form onSubmit={() => signIn(email, password)}>

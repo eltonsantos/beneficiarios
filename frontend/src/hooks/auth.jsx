@@ -1,9 +1,8 @@
 import { createContext, useState, useContext } from 'react';
 
+const AuthContext = createContext();
 
-const AdminContext = createContext();
-
-const AdminProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
 
   const [logged, setLogged] = useState(() => {
     const isLogged = localStorage.getItem('@beneficiarios:logged');
@@ -26,17 +25,17 @@ const AdminProvider = ({ children }) => {
   }
 
   return (
-    <AdminContext.Provider value={{ logged, signIn, signOut }}>
+    <AuthContext.Provider value={{ logged, signIn, signOut }}>
       { children } 
-    </AdminContext.Provider>
+    </AuthContext.Provider>
   )
 
 }
 
-function useAdmin() {
-  const context = useContext(AdminContext);
+function useAuth() {
+  const context = useContext(AuthContext);
 
   return context;
 }
 
-export { AdminProvider, useAdmin };
+export { AuthProvider, useAuth };

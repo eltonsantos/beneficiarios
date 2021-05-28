@@ -1,6 +1,6 @@
 const Admin = () => {
   return (
-    <h1>Colaborador</h1>
+    <h1>Colaboradores</h1>
   )
 }
 

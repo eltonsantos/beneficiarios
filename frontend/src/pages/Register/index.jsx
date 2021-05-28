@@ -7,12 +7,23 @@ const Register = () => {
 
     const modalWrapper = document.querySelector('.modal-wrapper');
 
+    const span = document.getElementById('close');
+
     buttonOpenModal.onclick = function () {
       modalWrapper.classList.remove('invisible');
     }
 
+    span.onclick = function () {
+      modalWrapper.classList.add('invisible');
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modalWrapper) {
+        modalWrapper.classList.add('invisible');
+      }
+    }
+
     document.addEventListener('keydown', function (event) {
-      console.log(event);
       const isEscKey = event.key === 'Escape';
       if (isEscKey) {
         modalWrapper.classList.add('invisible');
@@ -21,15 +32,25 @@ const Register = () => {
   }
 
   return (
-    <>
+    <div className="">
 
       <h3 className="px-5 py-5 space-y-6 sm:p-6 text-indigo-500 font-bold text-2xl">Cadastrar Beneficiário</h3>
 
       <div className="grid grid-flow-col grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4">
         <form className="">
+
+          <div className="modal-wrapper invisible fixed bg-gray-700 bg-opacity-30 w-screen h-screen flex items-center justify-center">
+            <div className="pt-4 pb-7 pr-10 pl-10 bg-white border-2 border-indigo-300 rounded ">
+
+              <span id="close" className="close text-3xl text-indigo-500 font-bold cursor-pointer block text-right">&times;</span>
+
+              <Dependentes />
+            </div>
+          </div>
+
           <div className="px-4 py-5 space-y-6 sm:p-6">
             <div className="col-span-6 sm:col-span-3">
-              <label htmlFor="name" className="block text-sm font-medium  text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Nome
                 </label>
               <input
@@ -81,12 +102,6 @@ const Register = () => {
             </div>
 
             <button type="button" onClick={() => openModal()} id="openModal" className="block w-full justify-center border shadow-sm mt-3 p-2 text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:ring-2 focus:ring-offset-2">Incluir dependente</button>
-
-            <div className="modal-wrapper invisible fixed bg-gray-500 w-screen h-screen flex items-center justify-center">
-              <div className="p-8 bg-white text-center rounded ">
-                <Dependentes />
-              </div>
-            </div>
 
             <div>
               <div className="mt-1 flex items-center">
@@ -147,7 +162,7 @@ const Register = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 

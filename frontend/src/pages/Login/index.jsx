@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <Container>
       <form className="bg-white shadow rounded px-8 pt-6 pb-8 mb-4 w-80">
-        <h3 className="border-b py-4 font-bold text-black text-center text-xl tracking-widest uppercase">Entrar</h3>
+        <h3 className="border-b py-4 font-bold text-indigo-500 text-center text-xl tracking-widest uppercase">Entrar</h3>
 
         <input
           type="email"
@@ -34,7 +34,7 @@ const Login = () => {
 
         <button
           type="submit"
-          className="bg-blue-400 hover:bg-blue-500 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline block"
+          className="bg-indigo-600 hover:bg-indigo-700 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline block"
         >
           Acessar
         </button>

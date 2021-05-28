@@ -1,6 +1,27 @@
+import { Link } from 'react-router-dom';
+
 const Menu = () => {
   return (
-    <div className="text-3xl text-red-600">Menu aqui</div>
+    <nav className="relative bg-indigo-500 border-b-2 border-indigo-500 text-gray-900">
+      <div className="container flex justify-between">
+        <div className="relative block p-4 lg:p-6 text-xl mr-6 text-white font-bold">
+          <Link to="/" className="hover:text-indigo-900">Beneficiários | Yube</Link>
+        </div>
+        <ul className="flex">
+          <li className="hover:bg-indigo-700 text-white hover:text-white">
+            <Link to="/" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Cadastro</Link>
+          </li>
+
+          <li className="hover:bg-indigo-700 text-white hover:text-white">
+            <Link to="/admin" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Admin</Link>
+          </li>
+
+          <li className="hover:bg-indigo-700 text-white hover:text-white">
+            <Link to="/" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Sair</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   )
 }
 

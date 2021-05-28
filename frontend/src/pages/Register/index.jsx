@@ -18,7 +18,7 @@ const Register = () => {
     }
 
     window.onclick = function (event) {
-      if (event.target == modalWrapper) {
+      if (event.target === modalWrapper) {
         modalWrapper.classList.add('invisible');
       }
     }
@@ -32,12 +32,11 @@ const Register = () => {
   }
 
   return (
-    <div className="">
-
+    <>
       <h3 className="px-5 py-5 space-y-6 sm:p-6 text-indigo-500 font-bold text-2xl">Cadastrar Beneficiário</h3>
 
-      <div className="grid grid-flow-col grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4">
-        <form className="">
+      <div className="grid grid-flow-col grid-rows-1 sm:grid-rows-1 sm:grid-cols-2 gap-2">
+        <form>
 
           <div className="modal-wrapper invisible fixed bg-gray-700 bg-opacity-30 w-screen h-screen flex items-center justify-center">
             <div className="pt-4 pb-7 pr-10 pl-10 bg-white border-2 border-indigo-300 rounded ">
@@ -48,7 +47,7 @@ const Register = () => {
             </div>
           </div>
 
-          <div className="px-4 py-5 space-y-6 sm:p-6">
+          <div className="px-4 py-5 space-y-6 sm:pb-6">
             <div className="col-span-6 sm:col-span-3">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Nome
@@ -151,7 +150,8 @@ const Register = () => {
                 </div>
               </div>
             </div>
-            <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            
+            <div className="text-right sm:px-0">
               <button
                 type="submit"
                 className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -162,7 +162,7 @@ const Register = () => {
           </div>
         </form>
       </div>
-    </div>
+    </>
   )
 }
 

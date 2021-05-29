@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "server": "json-server db.json -w -d 750 -p 3333",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "build:watch": "postcss src/styles/tailwind.css -o src/styles/main.css --watch"
   },
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3"
   }
 }

@@ -1,4 +1,4 @@
-import Dependentes from '../../components/Dependentes';
+import Dependentes from '../../components/Dependents';
 
 const Register = () => {
 

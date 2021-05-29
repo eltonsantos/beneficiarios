@@ -1,4 +1,4 @@
-const Dependentes = () => {
+const Dependents = () => {
   return (
     <>
       <div className="mt-1 col-span-6 sm:col-span-3">
@@ -50,4 +50,4 @@ const Dependentes = () => {
   )
 }
 
-export default Dependentes;
+export default Dependents;

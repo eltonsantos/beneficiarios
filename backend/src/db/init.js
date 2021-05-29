@@ -6,7 +6,7 @@ const initDb = {
 
     const db = await Database();
 
-    await db.exec(`CREATE TABLE contributors (
+    await db.exec(`CREATE TABLE collaborators (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       avatar TEXT,
       name TEXT,
@@ -16,7 +16,7 @@ const initDb = {
       approved INT
     )`);
 
-    await db.run(`INSERT INTO contributors (
+    await db.run(`INSERT INTO collaborators (
       avatar,
       name,
       surname,

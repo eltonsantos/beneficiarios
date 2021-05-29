@@ -1,6 +1,8 @@
 const express = require('express');
 const server = express();
+const routes = require('./routes');
 
-server.listen('http://localhost:3333', () => {
-  console.log('listening on http://localhost:3333');
-})
+// HEROKU
+const porta = process.env.PORT || 3333;
+
+server.listen(porta, () => console.log(`🚀 Server started on port ${porta}`));

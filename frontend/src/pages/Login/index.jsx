@@ -1,13 +1,13 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
-import { useAuth } from '../../hooks/auth';
+// import { useAuth } from '../../hooks/auth';
 
 import { Container } from './styles';
 
 const Login = () => {
 
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  // const [email, setEmail] = useState();
+  // const [password, setPassword] = useState();
 
   // const { signIn } = useAuth();
 
@@ -21,7 +21,6 @@ const Login = () => {
           placeholder="E-mail"
           required
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          onChange={(e) => setEmail(e.target.value)}
         />
 
         <input
@@ -29,7 +28,6 @@ const Login = () => {
           placeholder="Senha"
           required
           className="shadow appearance-none border rounded w-full py-2 px-3 mt-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-          onChange={(e) => setPassword(e.target.value)}
         />
 
         <button

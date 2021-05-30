@@ -9,8 +9,8 @@ const Register = () => {
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
   const [cpf, setCpf] = useState('');
-  const [benefit, setBenefit] = useState(['Auxílio Doença', 'Seguro Desemprego', 'Bolsa Família']);
-  const [benefitSelected, setBenefitSelected] = useState('');
+  const [benefit, ] = useState(['Auxílio Doença', 'Seguro Desemprego', 'Bolsa Família']);
+  const [, setBenefitSelected] = useState('');
   const [avatar, setAvatar] = useState('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');
 
   // const changeBenefit = (value) => {

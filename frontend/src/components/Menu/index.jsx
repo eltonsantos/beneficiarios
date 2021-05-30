@@ -12,15 +12,11 @@ const Menu = () => {
           <Link to="/" className="hover:text-indigo-900">Beneficiários | Yube</Link>
         </div>
         <ul className="flex">
-          <li className="hover:bg-indigo-700 text-white hover:text-white">
-            <Link to="/" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Cadastro</Link>
-          </li>
-          
           {
 
             logged ?
               (
-                <>           
+                <>
                   <li className="hover:bg-indigo-700 text-white hover:text-white">
                     <Link to="/admin" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Admin</Link>
                   </li>
@@ -31,9 +27,14 @@ const Menu = () => {
               )
               :
               (
-                <li className="hover:bg-indigo-700 text-white hover:text-white">
-                  <Link to="/login" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Login</Link>
-                </li>
+                <>
+                  <li className="hover:bg-indigo-700 text-white hover:text-white">
+                    <Link to="/" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Cadastro</Link>
+                  </li>
+                  <li className="hover:bg-indigo-700 text-white hover:text-white">
+                    <Link to="/login" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Login</Link>
+                  </li>
+                </>
               )
 
           }

@@ -20,7 +20,7 @@ const Register = () => {
   // };
 
   function addCollaborator() {
-
+    
   }
 
   // MODAL FOR INCLUDE DEPENDENTS

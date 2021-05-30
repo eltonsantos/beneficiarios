@@ -9,7 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const signIn = useAuth();
+  const { signIn } = useAuth();
 
   return (
     <Container>

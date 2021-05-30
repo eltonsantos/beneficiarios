@@ -4,11 +4,13 @@ import ReactDOM from "react-dom";
 import "./styles/main.css";
 
 import App from "./App";
-// import { AuthProvider } from './hooks/auth';
+import { AuthProvider } from "./hooks/auth";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

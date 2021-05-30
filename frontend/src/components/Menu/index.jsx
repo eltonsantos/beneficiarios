@@ -3,7 +3,7 @@ import { useAuth } from '../../hooks/auth';
 
 const Menu = () => {
 
-  // const { logged } = useAuth();
+  const { logged, signOut } = useAuth();
 
   return (
     <nav className="relative bg-indigo-500 border-b-2 border-indigo-500 text-gray-900">
@@ -16,7 +16,7 @@ const Menu = () => {
             <Link to="/" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Cadastro</Link>
           </li>
           
-          {/* {
+          {
 
             logged ?
               (
@@ -25,7 +25,7 @@ const Menu = () => {
                     <Link to="/admin" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Admin</Link>
                   </li>
                   <li className="hover:bg-indigo-700 text-white hover:text-white">
-                    <Link to="/signOut" className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Sair</Link>
+                    <Link to="/login" onClick={signOut} className="relative block py-6 px-2 lg:p-6 text-sm lg:text-base font-bold">Sair</Link>
                   </li>
                 </>
               )
@@ -36,7 +36,7 @@ const Menu = () => {
                 </li>
               )
 
-          } */}
+          }
 
         </ul>
       </div>

@@ -8,27 +8,27 @@ const Details = () => {
         <div className="">
 
           <header className="flex flex-wrap items-center p-4 md:py-8">
-            <div class="md:w-3/12 md:ml-1">
-              <img class="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-indigo-600 p-1" src="https://avatars.githubusercontent.com/u/1292594?v=4" alt="profile" />
+            <div className="md:w-3/12 md:ml-1">
+              <img className="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-indigo-600 p-1" src="https://avatars.githubusercontent.com/u/1292594?v=4" alt="profile" />
             </div>
 
-            <div class="w-8/12 md:w-7/12 ml-9">
-              <div class="md:flex md:flex-wrap md:items-center mb-4">
-                <h2 class="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
+            <div className="w-8/12 md:w-7/12 ml-9">
+              <div className="md:flex md:flex-wrap md:items-center mb-4">
+                <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>Nome Completo:</b></div>
                   Elton Santos
                 </h2>
               </div>
 
-              <div class="md:flex md:flex-wrap md:items-center mb-4">
-                <h2 class="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
+              <div className="md:flex md:flex-wrap md:items-center mb-4">
+                <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>CPF:</b></div>
                   123.456.789-00
                 </h2>
               </div>
 
-              <div class="md:flex md:flex-wrap md:items-center mb-4">
-                <h2 class="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
+              <div className="md:flex md:flex-wrap md:items-center mb-4">
+                <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>Benefício Solicitado:</b></div>
                     Seguro desemprego
                   </h2>

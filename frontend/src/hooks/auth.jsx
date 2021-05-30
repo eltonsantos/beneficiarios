@@ -11,7 +11,7 @@ const AuthProvider = ({ children }) => {
   });
 
   const signIn = (email, password) => {
-    if(email === 'admin@yube.com' && password === '123456') {
+    if(email === 'admin@yube.com' && password === '123') {
       localStorage.setItem('@beneficiarios:logged', 'true');
       setLogged(true);
     } else {

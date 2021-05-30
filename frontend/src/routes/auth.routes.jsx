@@ -4,7 +4,7 @@ import Login from '../pages/Login';
 import Admin from '../pages/Admin';
 import Details from '../pages/Details';
 
-const AdminRoutes = () => {
+const AuthRoutes = () => {
   <Switch>
     <Route path="/login" component={Login} />
     <Route path="/admin" component={Admin} />
@@ -12,4 +12,4 @@ const AdminRoutes = () => {
   </Switch>
 }
 
-export default AdminRoutes;
+export default AuthRoutes;

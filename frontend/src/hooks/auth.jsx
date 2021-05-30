@@ -8,7 +8,6 @@ const AuthProvider = ({ children }) => {
 
   let history = useHistory();
 
-
   const [logged, setLogged] = useState(() => {
     const isLogged = localStorage.getItem('@beneficiarios:logged');
 

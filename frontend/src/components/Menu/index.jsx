@@ -9,7 +9,17 @@ const Menu = () => {
     <nav className="relative bg-indigo-500 border-b-2 border-indigo-500 text-gray-900">
       <div className="container flex justify-between">
         <div className="relative block p-4 lg:p-6 text-xl mr-6 text-white font-bold">
-          <Link to="/" className="hover:text-indigo-900">Beneficiários | Yube</Link>
+          {
+            logged ?
+            (
+              <Link to="/admin" className="hover:text-indigo-900">Beneficiários | Yube</Link>
+            )
+            :
+            (
+              <Link to="/" className="hover:text-indigo-900">Beneficiários | Yube</Link>
+            )
+          }
+          
         </div>
         <ul className="flex">
           {
